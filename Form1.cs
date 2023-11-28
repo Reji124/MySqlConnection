@@ -65,13 +65,13 @@ namespace mysqlConnection_Aguio
                 {
                     con.connectdb.Open();
                     label2.Text = "You are Connected to the MySql Database!";
-                   
+                    label2.ForeColor = System.Drawing.Color.Green;
                     con.connectdb.Close();
                 }
                 catch (Exception)
                 {
                     label2.Text = "Failed to Connect to Mysql Database!";
-                    label2.ForeColor = System.Drawing.Color.Green;
+                    
 
             }
             
